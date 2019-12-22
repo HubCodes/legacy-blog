@@ -74,3 +74,5 @@ jekyll-archives:
     tag: /tags/:name/
 
 remote_theme : yous/whiteglass
+disqus_url : https://hubcodes.disqus.com/
+disqus_id : hubcodes
