@@ -57,7 +57,7 @@ type EitherFunctor = Functor[({ type IntOr[A] = Either[Int, A] })#IntOr]
 
 ### [`typelevel/kind-projector`](https://github.com/typelevel/kind-projector)
 
-복잡한 문법은 가독성을 떨어뜨리는 일차적인 요인 중 하나이다. `kind-projector` 는 타입 람다의 복잡성을 덜어내기 위해 만들어진 컴파일러 플러그인이다. 이걸 쓰면 아래처럼 간단하게 처리할 수 있다.
+복잡한 문법은 가독성을 떨어뜨리는 일차적인 요인 중 하나이다. `kind-projector` 는 타입 람다의 복잡성을 덜어내기 위해 만들어진 컴파일러 플러그인이다. 이걸 쓰면 아래처럼 간단하게 처리할 수 있다. (아래 예시들은 모두 Simplify를 위해 Functor를 벗겨냈다. 아래 코드들은 컴파일 에러가 발생한다는 의미이다. 타입 파라미터를 받기 때문이다)
 
 ```scala
 type IntOr = Either[Int, *]
